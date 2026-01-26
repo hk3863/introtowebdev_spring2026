@@ -1,5 +1,5 @@
 # Recipe for Tteokbokki - Spicy Korean Rice Cakes (Serves 2)
-!["A plate of Korean tteokbokki featuring cylindrical rice cakes coated in a glossy red chili sauce, garnished with chopped green onions and sesame seeds."]("Tteokbokki.jpg")
+![A plate of Korean tteokbokki featuring cylindrical rice cakes coated in a glossy red chili sauce, garnished with chopped green onions and sesame seeds.](img/Tteokbokki.jpg)
 ## Ingredients
 - Korean rice cakes (tteok): 300 g (cylindrical *garaetteok*), fresh or soaked if frozen
 - Fish cakes (eomuk): 100–150 g, sliced
