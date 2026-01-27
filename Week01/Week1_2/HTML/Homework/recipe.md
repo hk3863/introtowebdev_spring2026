@@ -1,7 +1,7 @@
 # Recipe for Tteokbokki - Spicy Korean Rice Cakes (Serves 2)
 
 ## Description
-Tteokbokki is a classic Korean street food made with chewy rice cakes simmered in a bold, spicy-sweet gochujang sauce. It is comforting, satisfying, and known for its glossy red sauce and addictive texture.
+**Tteokbokki is a classic Korean street food made with chewy rice cakes simmered in a bold, spicy-sweet gochujang sauce. It is comforting, satisfying, and known for its glossy red sauce and addictive texture.**
 
 ## Ingredients
 - Korean rice cakes (tteok): 300 g (cylindrical *garaetteok*), fresh or soaked if frozen
