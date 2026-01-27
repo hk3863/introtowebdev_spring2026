@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Form Elements</title>
+  </head>
+  <body>
+    <!-- Command + / to comment in whatever language you are currently writing -->
+     <p id="top">
+        Here is a form containing basic input types. For more information please see 
+        <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"
+        >W3 Schools Tutorials</a>. Whenever you need to make an anchor tag but you font have
+        the final link/url yet... use the <code>#</code> for your href!
+        </p>
+        <!-- The form tag itself, is not visible on the page. It wrapps form elements
+         and bakes in some browser default behavio.
+         Like: Hitting he enter key to submit a small form. Clicking any button
+         inside the form-->
+         <!--The name attribute is super important. This tells JS or whatever backend language
+         what form this is and where to write the NAMED input values in your to API -->
+         <!-- action attribute is the script or fuction or API endpoint to process the form-->
+        <!-- https://www.w3schools.com/tags/att_form_method.asp
+         GET - Retreive/read data
+         POST - Writing to DB or sending onff to REST API endpoint
+         PUT - Edit/Update entry
+         DELETE - deletes a record,
+         usually you need to send off some unique ID to know what item to delete
+         -->
+        <form 
+        name="ContactUs" 
+        target="self" 
+        action="userLogin.js"
+        method="POST">
+        <!-- This is an old school tag. Its a way of "grouping" form inputs visually without-->
+         <fieldset>
+            <!--Legend is the title of this form group / fieldset -->
+            <legend>Simple Text Input</legend>
+            <p>
+                The box and title seen are created by fieldset and legend tags. Think
+                modern day form groups or input groups.
+            </p>
+            <!-- Inputs change appearance and behavior based on the type of attribute. If you-->
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" placeholder="Dummy Text Hint" />
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" maxlength="15" required />
+
+            <!-- Input type number -->
+            <label for="age">Your Age:</label>
+            <input type="number" name="age" min="0" max="100" step="0.01"/>
+
+            <label for="password">Enter a Password:</label>
+            <input type=""password" name="password" minlength="10" />
+        </fieldset>
+        <fieldset>
+            <legend>TextArea Tag</legend>
+            <p>
+                Textarea tags are great for longer text answers, and sentences and paragraphs.
+            </p>
+            <label for="whyIDM">Why did you apply to IDM?</label>
+            <textarea name="whyIDM" id="whyIDM" cols="50" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset><legend>Checkboxes</legend>
+        <p>Check boxes allow the user to select more than one value (checkbox) at once. <strong>
+            Checkboxes in the name "group" have the same name but different pre-defined values.
+        </strong>
+        </p>
+
+        <label for="pets">What pets do you have?</label>
+        <br />
+        <!-- Beware of copy-paste! Make sure you update the Text the user sees AND the -->
+        <input type="checkbox" name="pet" value="dog" /> DOG <br />
+        <input type="checkbox" name="pet" value="dog" /> CAT <br />
+        <input type="checkbox" name="pet" value="dog" /> CHICKEN <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio Buttons</legend>
+            <p>
+                Radio Buttons allow the user to select ONLY one value (radio button) at once.
+                <strong>
+                    Radio buttons in the name "group" have the same name but different
+                    pre-defined values.</strong>
+            </p>
+            <label for="favPet">Which pet is your favorite?</label><br />
+            <input type="radio" name="favPet" id="favPet" value="dog"><label>dog</label>
+            <input type="radio" name="favPet" id="favPet" value="dog"><label>cat</label>
+            <input type="radio" name="favPet" id="favPet" value="dog"><label>chicken</label>
+            <br />
+        <!-- If you can select more than on radio button in the same group, chances are you 
+         have a syntax error - typo. For radio or checkbox to be
+         grouped they must all have the same exact name -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Options (Dropdown Menu)</legend>
+            <p>
+                Using he select and option tags, you can add items to a dropdown.
+            </p>
+            <label for="state">Pick a State!</label>
+            <select name="state">
+                <!-- you name the select tag which groups the option together,
+                 the value from each option is what writes to the DB-->
+                 <option value="NH">New Hampshire</option>
+                 <option value="NH">New York</option>
+                 <option value="NH">New Hersey</option>
+                 <option value="NH">New Mexico</option>
+            </select>
+        </fieldset>
+        <p>Finally, we use a button to submit out form!</p>
+        <button role="button">Sign Up!</button>
+        <input name="submit" value="Submit" type="button" disabled />
+    </form>
+
+    <a href="#top" >Back to Top</a>
+  </body>
+</html>
