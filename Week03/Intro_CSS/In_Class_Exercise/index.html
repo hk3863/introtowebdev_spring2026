@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1" />
+
+        <title>Intro to CSS Text and Spans</title>
+
+        <!-- This is how you write and internal style sheet-->
+        <!-- These styles apply only to this page they are defined to-->
+        <style type="text/CSS">
+            /*universal selector to zero out the default margins on everything
+            */
+            * {
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* tag selectors apply to every instance of a tag on the page */
+            h2 {
+                color: blueviolet
+                background-color: chartreuse;
+
+                color: #FF0000;
+                background-color: green;
+
+                color: rgb(0,0,120);
+                background-color: rgb(0,0,120,0.2);
+            }
+
+
+            .align_right {
+                width: 50%;
+                text-align: right;
+            }
+
+            .align_justified {
+
+            }
+
+            /* ID selectors being with # */
+            #really_important {
+                font-weight: bold;
+
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1 style="margin: 20px 10px 5px 5px; margin-top:50px">
+            Heading 1 Displays Block</h1>
+
+        <h2> Remember only 1 h1 per page </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nam tristique, elit varius faucibus aliquet, nulla nisi rutrum urna, 
+            a malesuada leo urna non mi. Sed eu sem ac tellus mattis mattis. 
+            Aenean neque nisi, lacinia eu erat sit amet, facilisis pulvinar enim. 
+            Duis eu fermentum tellus, eget sodales lectus. Maecenas nec ipsum 
+            ac ipsum interdum tempus. Integer non malesuada felis. 
+            Suspendisse ut ligula a turpis interdum rhoncus. Mauris at 
+            vestibulum nibh. Fusce ac quam euismod, bibendum sem eu, 
+            tempus ligula. Praesent et mattis massa. Maecenas posuere arcu sit 
+            amet massa suscipit sodales. Phasellus sed eleifend mauris, quis 
+            tempus mi. Praesent sodales orci id ipsum blandit, vel luctus magna
+            condimentum. Vestibulum a quam non sapien tincidunt commodo. 
+            Curabitur lorem ligula, maximus ac lobortis sed, sollicitudin non 
+            libero.</p>
+
+            <p id="really important" class="align_justified">
+                Vestibulum a quam non sapien tincidunt commodo. 
+            Curabitur lorem ligula, maximus ac lobortis sed, sollicitudin non 
+            libero.
+            </p>
+
+
+    </body>
+</html>
