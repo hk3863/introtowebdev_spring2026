@@ -1,0 +1,30 @@
+/* Global Styles First */
+/* This example will use Desktop First Styling
+Desktop First = default styles are written for desktop/laptop
+media queries will go from large to smaller screens */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.thumb {
+    width: 25%;
+}
+
+/* #box_sizer {
+    width: 200px;
+    height: 200px;
+    border: 40px solid green;
+    padding: 20px;
+    background-color: rgba(0, 0, 200, 0.3);
+} */

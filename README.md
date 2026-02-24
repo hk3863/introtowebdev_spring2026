@@ -4,3 +4,4 @@ This repository contains coursework, exercises, homework, and projects for **DM-
 ## Homework Submission
 - Week 1: [recipe.md](https://github.com/hk3863/introtowebdev_spring2026/blob/main/Week01/Week1_2/HTML/Homework/recipe.md), [index.html](https://github.com/hk3863/introtowebdev_spring2026/blob/main/Week01/Week1_2/HTML/Homework/index.html)
 - Week 3: [Site Map](./Week03/Homework/Site_Map.png), [Wireframe](./Week03/Homework/wireframe.png), [Recipe_Website](./Week03/Homework/index.html)
+- Week 4: [Midterm Project Proposal](https://www.figma.com/deck/hjXw9CSZtJ2Apx7zSWjlrh/Midterm-Project-Proposal_Hyein-Kim?node-id=4-566&viewport=-4830%2C-30%2C0.44&t=c1Ev7wU9U8V7taHC-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
