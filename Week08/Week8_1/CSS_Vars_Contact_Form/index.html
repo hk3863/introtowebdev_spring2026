@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>CSS Vars | Contact Us</title>
+    
+    <style type="text/CSS">
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+
+
+       /* CSS variables - usually in global.css or variables.css */
+       /* CSS Vars Default */
+
+       :root {
+        --c-bg: #e2e8f0;
+        --c-text: #475569;
+        --c-bg-btn: #1e293b;
+        --c-bg-btn-hover: #64748b;
+        --c-btn-text: #f8fafc;
+
+        --ff-heading: "Press Start 2P", system-ui;
+        --ff-body:  "Share Tech Mono", monospace;
+       }
+       
+       #green {
+        --c-bg: #a7f3d0;
+        --c-text: #065f46;
+        --c-bg-btn: #059669;
+        --c-bg-btn-hover: #065f46;
+        --c-btn-text: #ecfdf5;
+
+        --ff-heading: "Press Start 2P", system-ui;
+        --ff-body:  "Share Tech Mono", monospace;
+       }
+
+       #blue {
+        --c-bg: #1e3a8a;
+        --c-text: #f8fafc;
+        --c-bg-btn: #1e40af;
+        --c-bg-btn-hover: #1e3a8a;
+        --c-btn-text: #f8fafc;
+
+        --ff-heading: "Press Start 2P", system-ui;
+        --ff-body:  "Share Tech Mono", monospace;
+       }
+       
+       
+       /* Base styles */
+
+      body {
+      font-family: Helvetica, Arial, sans-serif;
+      }
+
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 1rem;
+        padding: 2rem;
+        background-color: var(--c-bg);
+        color: var(--c-text);
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .label-lg {
+        font-size: 2rem;
+      }
+
+      .input-lg {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid var(--c-text);
+        margin-right: 2rem;
+      }
+
+      .message-area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+
+      .message {
+        height: 16rem;
+        border-radius: 0.25rem;
+        padding: 1rem;
+      } 
+
+      .button-bar {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 2rem;
+      }
+
+      .btn-dark {
+        width: 100%;
+        border-radius: 0.5rem;
+        padding:1rem;
+        background-color: var(--c-bg-btn);
+        color: var(--c-btn-text);
+        border: 1px solid var(--c-text);
+
+      }
+
+      .btn-dark:hover {
+        background-color: var(--c-bg-btn-hover);
+      }
+
+
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <body id="blue">
+      <div class="container">
+        <h1>Get In Touch!</h1>
+        <!-- POST is for sending data no query string in the URL -->
+        <form action="https://formspree.io/f/xgonapdl" method="POST">
+          <div class="row">
+            <label class="label-lg" for="name">Name:</label>
+            <input name="name" type="text" class="input-lg" required/>
+
+            <label class="label-lg" for="email">Email:</label>
+            <input name="email" type="text" class="input-lg" required/>
+          </div>
+
+          <div class="message-area">
+            <label for="message" class="label-lg">Leave me a message!</label>
+            <textarea name="message" class="message" placeholder="Leave a comment or question here!" required></textarea>
+          </div>
+          <div class="button-bar">
+            <button class="btn-dark" type="submit">Send</button>
+
+          </div>
+          
+          <input type="hidden" name="subject" value="New Submission From: {{name}}" />
+
+        </form>
+      </div>
+    </body>
+  </body>
+</html>
