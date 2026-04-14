@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Object vs JSON</title>
+  </head>
+  <body>
+    <script>
+      // initialize a new object and store it as a variable named customer
+
+      const customer = {
+          name: 'Tony',
+          age: 23,
+          married: false,
+          pets: ['dog', 'cat', 'iguana'],
+          siblings: [
+            {name: 'Mary', age: 32, married: true},
+            {name: 'Billy', age: 16, married: false}
+          ],
+        }
+
+      /*  // log the following:
+        // Tony's sister's age
+        console.log(customer.siblings[0].age);
+        // All of Tony's pets
+        for (let i=0; i<customer.pets.length; i++) {
+            console.log(customer.pets[i]);
+        } 
+        // Tony's age
+        console.log(customer.age);
+
+        const customerJSON = JSON.stringify(customer);
+        console.log(customerJSON);
+        
+        const customerObject = JSON.parse(customerJSON);
+        console.log(customerObject);
+        */
+
+        function logAPIResults () {
+          // await = dear JS please chill out and wait for the next bit of code to resolve before moving on
+          const response = await fetch('https://rickandmortyapi.com/api/character/100');
+        }
+    </script>
+  </body>
+</html>
