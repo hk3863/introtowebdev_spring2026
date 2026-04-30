@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editor | Hyein Kim</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="./index.html">Hyein Kim</a></h1>
+        <span class="mobile-menu" id="mobile-menu">&#8801;</span>
+        <nav class="site-nav">
+          <ul class="menu" id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./inspirations.html">Inspirations</a></li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a class="active" href="./editor.html">Editor</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-section">
+      <div class="container editor-page">
+        <section class="editor-page-hero">
+          <p class="archive-kicker">Archive Tools</p>
+          <h2 class="page-title">Editor</h2>
+          <p class="page-intro">
+            Add browser-saved entries to the archive without rewriting the page structure.
+          </p>
+        </section>
+
+        <section class="editor-page-grid">
+          <section class="editor-panel" aria-labelledby="work-editor-title">
+            <div class="editor-panel-heading">
+              <div>
+                <p class="archive-note-label" id="work-editor-title">Add Work</p>
+                <p class="editor-panel-copy">
+                  Create a new project entry for the bookshelf.
+                </p>
+              </div>
+            </div>
+
+            <div class="editor-shell is-open">
+              <form class="editor-form" id="work-editor-form">
+                <div class="editor-form-row">
+                  <label class="editor-field">
+                    <span class="editor-field-label">Project Title</span>
+                    <input type="text" name="title" placeholder="New archive entry" required />
+                  </label>
+
+                  <label class="editor-field">
+                    <span class="editor-field-label">Focus</span>
+                    <select name="category" required>
+                      <option value="marketing">Marketing</option>
+                      <option value="interactive-media">Interactive Media</option>
+                      <option value="coding">Coding</option>
+                      <option value="data-analysis">Data Analysis</option>
+                      <option value="strategy">Strategy</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="editor-form-row">
+                  <label class="editor-field">
+                    <span class="editor-field-label">Details</span>
+                    <input
+                      type="text"
+                      name="details"
+                      placeholder="Strategy / Research / Presentation"
+                      required
+                    />
+                  </label>
+
+                  <label class="editor-field">
+                    <span class="editor-field-label">Shelf Tone</span>
+                    <select name="tone" required>
+                      <option value="sand">Sand</option>
+                      <option value="olive">Olive</option>
+                      <option value="slate">Slate</option>
+                      <option value="rose">Rose</option>
+                      <option value="charcoal">Charcoal</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label class="editor-field">
+                  <span class="editor-field-label">Summary</span>
+                  <textarea
+                    name="summary"
+                    rows="4"
+                    placeholder="Short description for the preview area."
+                    required
+                  ></textarea>
+                </label>
+
+                <div class="editor-actions">
+                  <p class="editor-status" id="work-editor-status" aria-live="polite"></p>
+                  <div class="editor-button-row">
+                    <button class="editor-reset" id="work-editor-reset" type="button">
+                      Clear Saved Work
+                    </button>
+                    <button class="editor-submit" type="submit">Add To Shelf</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="editor-panel" aria-labelledby="inspiration-editor-title">
+            <div class="editor-panel-heading">
+              <div>
+                <p class="archive-note-label" id="inspiration-editor-title">Add Inspiration</p>
+                <p class="editor-panel-copy">
+                  Create a new inspiration entry for the collage.
+                </p>
+              </div>
+            </div>
+
+            <div class="editor-shell is-open">
+              <form class="editor-form" id="inspiration-editor-form">
+                <div class="editor-form-row">
+                  <label class="editor-field">
+                    <span class="editor-field-label">Title</span>
+                    <input type="text" name="title" placeholder="New inspiration" required />
+                  </label>
+
+                  <label class="editor-field">
+                    <span class="editor-field-label">Type</span>
+                    <select name="type" required>
+                      <option value="book">Book</option>
+                      <option value="film">Film</option>
+                      <option value="place">Place</option>
+                      <option value="person">Person</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="editor-form-row">
+                  <label class="editor-field">
+                    <span class="editor-field-label">Image Extension</span>
+                    <select name="extension" required>
+                      <option value="jpg">JPG</option>
+                      <option value="webp">WEBP</option>
+                      <option value="png">PNG</option>
+                      <option value="avif">AVIF</option>
+                    </select>
+                  </label>
+
+                  <label class="editor-field">
+                    <span class="editor-field-label">Image Alt</span>
+                    <input
+                      type="text"
+                      name="imageAlt"
+                      placeholder="Description of the image"
+                      required
+                    />
+                  </label>
+                </div>
+
+                <label class="editor-field">
+                  <span class="editor-field-label">Generated Image Path</span>
+                  <p class="editor-generated-path" id="inspiration-generated-path">
+                    ./img/inspirations/book/new-inspiration.jpg
+                  </p>
+                </label>
+
+                <div class="editor-actions">
+                  <p class="editor-status" id="inspiration-editor-status" aria-live="polite"></p>
+                  <div class="editor-button-row">
+                    <button class="editor-reset" id="inspiration-editor-reset" type="button">
+                      Clear Saved Inspirations
+                    </button>
+                    <button class="editor-submit" type="submit">Add To Archive</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </section>
+
+        <section class="editor-panel editor-log-panel" aria-labelledby="editor-log-title">
+          <div class="editor-panel-heading">
+            <div>
+              <p class="archive-note-label" id="editor-log-title">Saved In This Browser</p>
+              <p class="editor-panel-copy">
+                These are the custom entries layered on top of your default archive data.
+              </p>
+            </div>
+          </div>
+
+          <div class="editor-log-grid">
+            <section class="editor-log-column">
+              <p class="editor-log-label">Work</p>
+              <ul class="editor-log-list" id="work-editor-log"></ul>
+            </section>
+
+            <section class="editor-log-column">
+              <p class="editor-log-label">Inspirations</p>
+              <ul class="editor-log-list" id="inspiration-editor-log"></ul>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/archive-data.js"></script>
+    <script src="./js/archive-manager.js"></script>
+    <script src="./js/archive-editor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work | Hyein Kim</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="./index.html">Hyein Kim</a></h1>
+        <span class="mobile-menu" id="mobile-menu">&#8801;</span>
+        <nav class="site-nav">
+          <ul class="menu" id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./inspirations.html">Inspirations</a></li>
+            <li><a class="active" href="./work.html">Work</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-section">
+      <div class="container work-page">
+        <section class="work-hero">
+          <p class="archive-kicker">Selected Projects</p>
+          <h2 class="page-title">Work</h2>
+          <p class="page-intro">
+            Projects across business, strategy, marketing, and interactive media.
+          </p>
+        </section>
+
+        <section class="filter-panel" aria-labelledby="work-filters-title">
+          <div class="filter-panel-heading">
+            <p class="archive-note-label" id="work-filters-title">Browse By Focus</p>
+            <p class="filter-summary" id="work-filter-summary"></p>
+          </div>
+          <div class="filter-controls" id="work-filter-controls"></div>
+        </section>
+
+        <section class="work-stage" aria-label="Selected work archive">
+          <div class="work-stage-screen">
+            <div class="work-stage-preview" id="work-stage-preview" aria-live="polite">
+              <p class="work-stage-preview-label" id="work-preview-label">Project archive</p>
+              <h3 class="work-stage-preview-title" id="work-preview-title">
+                Hover over a file
+              </h3>
+              <p class="work-stage-preview-details" id="work-preview-details">
+                Project details will appear here.
+              </p>
+              <p class="work-stage-preview-summary" id="work-preview-summary">
+                Each file previews one project or placeholder entry from the archive.
+              </p>
+            </div>
+            <section class="work-grid" id="work-grid" aria-live="polite"></section>
+          </div>
+        </section>
+        <p class="filter-empty" id="work-empty" hidden>
+          No projects match this filter yet.
+        </p>
+      </div>
+    </main>
+    <script src="./js/nav.js"></script>
+    <script src="./js/archive-data.js"></script>
+    <script src="./js/archive-manager.js"></script>
+    <script src="./js/archive-filters.js"></script>
+  </body>
+</html>

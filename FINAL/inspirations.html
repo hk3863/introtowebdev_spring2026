@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inspirations | Hyein Kim</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="./index.html">Hyein Kim</a></h1>
+        <span class="mobile-menu" id="mobile-menu">&#8801;</span>
+        <nav class="site-nav">
+          <ul class="menu" id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="./inspirations.html">Inspirations</a></li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-section">
+      <div class="container inspirations-page">
+        <section class="inspirations-hero">
+          <div class="inspirations-copy">
+            <p class="archive-kicker">Personal Archive</p>
+            <h2 class="page-title">Inspirations</h2>
+          </div>
+        </section>
+
+        <section class="archive-note-row">
+          <p class="archive-note-text">
+            Books, films, places, and people I keep returning to.
+          </p>
+        </section>
+
+        <section class="filter-panel" aria-labelledby="inspiration-filters-title">
+          <div class="filter-panel-heading">
+            <p class="archive-note-label" id="inspiration-filters-title">Browse By Type</p>
+            <p class="filter-summary" id="inspiration-filter-summary"></p>
+          </div>
+          <div class="filter-controls" id="inspiration-filter-controls"></div>
+        </section>
+
+        <section class="gallery-board" id="inspiration-grid" aria-live="polite"></section>
+        <p class="filter-empty" id="inspiration-empty" hidden>
+          No archive entries match this filter yet.
+        </p>
+      </div>
+    </main>
+    <script src="./js/nav.js"></script>
+    <script src="./js/archive-data.js"></script>
+    <script src="./js/archive-manager.js"></script>
+    <script src="./js/archive-filters.js"></script>
+  </body>
+</html>

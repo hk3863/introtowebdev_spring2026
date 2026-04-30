@@ -8,3 +8,4 @@ This repository contains coursework, exercises, homework, and projects for **DM-
 - Midterm Project: [Personal Archive](./Midterm_Project/), [Presentation Slide Deck](https://www.figma.com/deck/OYJTk6eSYpLz57Bf49lsKr/HyeinKim_webdev_midtermProject?node-id=1-553&viewport=-100%2C-12%2C0.48&t=GlPputollnTFoWoU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 - Week 10: [JS_Objects](./Week10/index.html)
 - Week 11: [Final Project Proposal](./Week11/Final_Project_Proposal.md)
+- Week 14: [Final Project Presentation](https://www.figma.com/deck/a6s0tontH9xjdN50vI53Nt)

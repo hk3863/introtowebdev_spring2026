@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Hyein Kim</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="./index.html">Hyein Kim</a></h1>
+        <span class="mobile-menu" id="mobile-menu">&#8801;</span>
+        <nav class="site-nav">
+          <ul class="menu" id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./inspirations.html">Inspirations</a></li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a class="active" href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-section">
+      <div class="container contact-page">
+        <section class="contact-hero">
+          <p class="archive-kicker">Open Correspondence</p>
+          <h2 class="page-title">Contact</h2>
+          <p class="page-intro">
+            Send me a message! I am happy to discuss anything.
+          </p>
+        </section>
+
+        <section class="contact-layout">
+          <section class="contact-card" aria-labelledby="contact-form-title">
+            <div class="contact-card-shell" id="contact-card-shell">
+              <p class="contact-card-label" id="contact-form-title">Message Form</p>
+              <form
+                id="contact-form"
+                class="contact-form"
+                action="https://formspree.io/f/xnjwabey"
+                method="POST"
+              >
+                <div class="contact-form-row">
+                  <label class="contact-field">
+                    <span class="contact-field-label">Name</span>
+                    <input type="text" name="name" placeholder="Your name" required />
+                  </label>
+
+                  <label class="contact-field">
+                    <span class="contact-field-label">Email</span>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </label>
+                </div>
+
+                <label class="contact-field contact-field-message">
+                  <span class="contact-field-label">Message</span>
+                  <textarea
+                    name="message"
+                    rows="8"
+                    placeholder="Write your message here..."
+                    required
+                  ></textarea>
+                </label>
+
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New message from the Personal Archive site"
+                />
+
+                <div class="contact-form-footer">
+                  <button class="contact-submit" type="submit">Send Message</button>
+                </div>
+              </form>
+              <p class="contact-form-status" id="contact-form-status" aria-live="polite"></p>
+            </div>
+
+            <section
+              class="contact-success"
+              id="contact-success"
+              aria-live="polite"
+              hidden
+            >
+              <p class="contact-card-label">Message Sent</p>
+              <h3 class="contact-success-title">Thank you for reaching out.</h3>
+              <p class="contact-success-copy">
+                Your message has been sent successfully. I will get back to you soon.
+              </p>
+              <button class="contact-submit contact-reset" id="contact-reset" type="button">
+                Send Another Message
+              </button>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/contact-form.js"></script>
+  </body>
+</html>

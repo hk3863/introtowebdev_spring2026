@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Hyein Kim</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="about-scroll-page">
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="./index.html">Hyein Kim</a></h1>
+        <span class="mobile-menu" id="mobile-menu">&#8801;</span>
+        <nav class="site-nav">
+          <ul class="menu" id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./inspirations.html">Inspirations</a></li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a class="active" href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-section about-page-section">
+      <div class="about-page">
+        <section class="about-experience" id="about-experience">
+          <div class="about-stage">
+            <div class="about-stage-copy">
+              <p class="archive-kicker">Life Timeline</p>
+              <h2 class="page-title">About Me</h2>
+              <p class="page-intro about-lead">
+                A timeline of the places I've lived.
+              </p>
+            </div>
+
+            <nav class="about-city-nav" aria-label="City timeline">
+              <a href="#seoul" data-city-link="seoul">Seoul</a>
+              <a href="#xinjiang" data-city-link="xinjiang">Xinjiang</a>
+              <a href="#almaty" data-city-link="almaty">Almaty</a>
+              <a href="#abu-dhabi" data-city-link="abu-dhabi">Abu Dhabi</a>
+            </nav>
+
+            <div class="about-city-panels">
+              <article class="about-city-panel timeline-korea" id="seoul">
+                <div class="about-city-overlay"></div>
+                <div class="about-city-content">
+                  <p class="timeline-label">City 01</p>
+                  <h3>Seoul</h3>
+                  <p>
+                    I was born in Seoul, where my story begins.
+                  </p>
+                </div>
+              </article>
+
+              <article class="about-city-panel timeline-move" id="xinjiang">
+                <div class="about-city-overlay"></div>
+                <div class="about-city-content">
+                  <p class="timeline-label">City 02</p>
+                  <h3>Xinjiang</h3>
+                  <p>
+                    I spent two years of my early childhood in Xinjiang, which became
+                    one of the first places that shaped my sense of environment and memory.
+                  </p>
+                </div>
+              </article>
+
+              <article class="about-city-panel timeline-city" id="almaty">
+                <div class="about-city-overlay"></div>
+                <div class="about-city-content">
+                  <p class="timeline-label">City 03</p>
+                  <h3>Almaty</h3>
+                  <p>
+                    Almaty is where I grew up and where I graduated from high school.
+                    It is the place that shaped much of who I am.
+                  </p>
+                </div>
+              </article>
+
+              <article class="about-city-panel timeline-future" id="abu-dhabi">
+                <div class="about-city-overlay"></div>
+                <div class="about-city-content">
+                  <p class="timeline-label">City 04</p>
+                  <h3>Abu Dhabi</h3>
+                  <p>
+                    I have spent the last three years in Abu Dhabi, where I grew
+                    academically and developed a clearer sense of the work I want to do.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/about-scroll.js"></script>
+  </body>
+</html>
